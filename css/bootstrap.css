@@ -1,0 +1,42 @@
+/*-- me --*/  
+.me-grid {
+  padding: 0;
+}
+.me .img-w3l {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  text-decoration: none;
+  z-index: 1;
+  -webkit-transition: .5s all;
+  -moz-transition: .5s all;
+  transition: .5s all;
+}
+.me-grid:hover  .img-w3l {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(2.2);
+}
+.me-grid1:hover  .img-w3l {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(2.2);
+}
+.me-grid2:hover  .img-w3l {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(2.2);
+}
+/*-- //me --*/ 
+
+@media screen and (max-width: 768px) {
+  .ufo-hidden {
+    display: none;
+  }
+}

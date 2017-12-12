@@ -1,0 +1,60 @@
+.multiple_parallax {
+	height: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.first {
+	background-image: url('../img/parallax-background.jpg');
+	height: 72%;
+	padding: 20% 0px 3% 0px;
+
+}
+
+.second {
+	background-image: url('../img/parallax-background1.jpg');
+	height: 72%;
+	padding: 10%;
+}
+
+.three {
+	background-image: url(img/pic_three.jpg);
+	height: 72%;
+}
+
+.four {
+	background-image: url(img/pic_four.jpg);
+	height: 72%;
+}
+
+.sub-caption {
+	background: rgba(255, 255, 255, 0.4);
+	font-family: Helvetica;
+	width: 50%;
+	padding-top: 27px;
+	padding-bottom: 27px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 160%;
+	font-weight: 300;
+
+	position: absolute;
+	top: 50%;
+	right: 5%;
+	transform: translate(0%, -50%);
+}
+
+.left {
+	position: absolute;
+	top: 50%;
+	left: 5%;
+	transform: translate(0%, -50%);
+}
+@media screen and (max-width: 786px){
+	.multiple_parallax {
+	height: 50%;
+}
+}
