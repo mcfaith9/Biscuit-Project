@@ -17,8 +17,32 @@
     <script type="text/javascript" src="js/modernizr.custom.26633.js"></script>
     <!--JS for Preloader-->
     <!---->
-
 </head>
+
+<style>
+/*Scroll Style*/
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+   background-color: #F90;	
+   	background-image: -webkit-linear-gradient(90deg, rgba(255, 255, 255, .2) 25%,
+   											  transparent 25%,
+   											  transparent 50%,
+   											  rgba(255, 255, 255, .2) 50%,
+   											  rgba(255, 255, 255, .2) 75%,
+   											  transparent 75%,
+   											  transparent)
+}
+/*End Scroll Style*/
+</style>
 <body>
 
 	<header>
@@ -285,8 +309,24 @@
 	<footer class="socket">
 	<p>&copy Marc Louie Cabigas | Project Reference Codrops Article | W3Layouts | Google | &copy Rightful Owner of Images and Icons</p>
 	</footer>
+     
+
+    <!-- Scrolling Style  -->
+	<div class="scrollbar" id="style-10">
+	     <div class="force-overflow"></div>
+	</div>
 
 
 </body>
+
+<script>
+
+$(document).ready(function () {
+          if (!$.browser.webkit) {
+              $('.wrapper').html('<p>Sorry! Non webkit users. :(</p>');
+          }
+      });	
+
+</script>
 
 </html>
